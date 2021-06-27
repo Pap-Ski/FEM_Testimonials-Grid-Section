@@ -1,0 +1,28 @@
+:root {
+    /* font */
+    --ff-all: 'Barlow Semi Condensed', sans-serif;
+    /* primary colors*/
+    --clr-prim-mv: hsla(263, 55%, 52%, var(--opacity));
+    --clr-prim-vdgb: hsl(217, 19%, 35%);
+    --clr-prim-vdbb: hsl(219, 29%, 14%);
+    --clr-prim-whte: hsl(0, 0%, 100%);
+    /* neutral colors */
+    --clr-nue-lg: hsl(0, 0%, 81%);
+    --clr-nue-lgb: hsl(210, 46%, 95%);
+    /* opacity variable for each card */
+    --opacity: .5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 13px;
+}
+
+body {
+    font-family: var(--ff-all);
+}
