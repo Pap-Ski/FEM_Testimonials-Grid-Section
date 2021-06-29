@@ -131,6 +131,21 @@ body {
     grid-auto-rows: auto;
   }
 
+  .daniel {
+    grid-column: 1/3;
+  }
+  .jeanette {
+    grid-column: 1;
+  }
+
+  .patrick {
+    grid-column: 2/4;
+  }
+  .kira {
+    grid-column: 4;
+    grid-row: 1/3;
+  }
+
   .card {
     box-shadow: 0 0 1em hsla(0, 5%, 10%, 0.3);
   }
@@ -146,39 +161,23 @@ body {
   }
 
   .card__person p {
-    line-height: 1.5;
     font-size: 0.9rem;
     margin-left: 1em;
   }
 
   .card__desc-summary {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .card__desc {
     margin-top: 1.5em;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     line-height: 1.6;
   }
 
   .daniel.bg-img {
     background-position: 80% 0;
     background-size: 90px 90px;
-  }
-
-  .daniel {
-    grid-column: 1/3;
-  }
-  .jeanette {
-    grid-column: 1;
-  }
-
-  .patrick {
-    grid-column: 2/4;
-  }
-  .kira {
-    grid-column: 4;
-    grid-row: 1/3;
   }
 }
 
@@ -188,12 +187,12 @@ body {
   }
 
   .card__desc-summary {
-    font-size: 1.15rem;
+    font-size: 1.42rem;
   }
 
   .card__desc {
     margin-top: 1.5em;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.6;
   }
 }
