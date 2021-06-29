@@ -180,7 +180,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .main {
     margin: 6rem auto;
     width: 70%;
