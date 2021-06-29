@@ -1,28 +1,121 @@
 :root {
-    /* font */
-    --ff-all: 'Barlow Semi Condensed', sans-serif;
-    /* primary colors*/
-    --clr-prim-mv: hsla(263, 55%, 52%, var(--opacity));
-    --clr-prim-vdgb: hsl(217, 19%, 35%);
-    --clr-prim-vdbb: hsl(219, 29%, 14%);
-    --clr-prim-whte: hsl(0, 0%, 100%);
-    /* neutral colors */
-    --clr-nue-lg: hsl(0, 0%, 81%);
-    --clr-nue-lgb: hsl(210, 46%, 95%);
-    /* opacity variable for each card */
-    --opacity: .5;
+  /* font */
+  --ff-all: "Barlow Semi Condensed", sans-serif;
+  /* primary colors*/
+  --clr-prim-mv: hsla(263, 55%, 52%);
+  --clr-prim-vdgb: hsl(217, 19%, 35%);
+  --clr-prim-vdbb: hsl(219, 29%, 14%);
+  --clr-prim-whte: hsl(0, 0%, 100%);
+  /* neutral colors */
+  --clr-nue-lg: hsl(0, 0%, 81%);
+  --clr-nue-lgb: hsl(210, 46%, 95%);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 body {
-    font-family: var(--ff-all);
+  font-family: var(--ff-all);
+  background-color: var(--clr-nue-lgb);
+}
+
+.main {
+  margin: 5rem auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.card {
+  color: var(--clr-prim-whte);
+  padding: 2em 2em;
+  border-radius: 0.5em;
+}
+
+.card__person {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__person img {
+  width: 25%;
+  border-radius: 50%;
+}
+.card__person p {
+  max-width: 100px;
+  line-height: 1.5;
+}
+
+.card__desc-summary {
+  font-size: 1.68rem;
+  margin-top: 0.8em;
+}
+
+.card__desc {
+  font-size: 1.15rem;
+  margin-top: 1em;
+}
+
+.daniel img {
+  border: 2px solid hsla(0, 0%, 100%, 0.3);
+}
+.daniel.bg-img {
+  background: var(--clr-prim-mv) url(./images/bg-pattern-quotation.svg)
+    no-repeat 90% 0;
+}
+.daniel,
+.jonathan,
+.patrick {
+  --opacity: 1;
+  --clr-prim-whte: hsla(0, 0%, 100%, var(--opacity));
+  color: var(--clr-prim-whte);
+}
+
+.daniel.span,
+.jonathan.span,
+.patrick.span {
+  --opacity: 0.5;
+}
+
+.daniel.card__desc,
+.jonathan.card__desc,
+.patrick.card__desc {
+  --opacity: 0.7;
+}
+
+.jonathan {
+  background-color: var(--clr-prim-vdgb);
+}
+.patrick {
+  background-color: var(--clr-prim-vdbb);
+}
+.patrick img {
+  border: 2px solid var(--clr-prim-mv);
+}
+
+.kira,
+.jeanette {
+  --opacity: 1;
+  background-color: var(--clr-prim-whte);
+  --clr-prim-vdgb: hsla(217, 19%, 35%, var(--opacity));
+  color: var(--clr-prim-vdgb);
+}
+
+.kira.span,
+.jeanette.span {
+  --opacity: 0.5;
+}
+
+.kira.card__desc,
+.jeanette.card__desc {
+  --opacity: 0.7;
 }
