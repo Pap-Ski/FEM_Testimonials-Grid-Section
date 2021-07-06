@@ -103,3 +103,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Pap-Ski](https://www.frontendmentor.io/profile/Pap-Ski)
+- LinkedIn - [Quartey-Papafio Nii Laryea](https://www.linkedin.com/in/nii-laryea-quartey-papafio-229440176/)
